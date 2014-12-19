@@ -4,3 +4,6 @@
 [submodule "module/Debug"]
 	path = module/Debug
 	url = git@github.com:deanrobertcook/Debug.git
+[submodule "module/User"]
+	path = module/User
+	url = git://github.com/deanrobertcook/User.git
