@@ -43,6 +43,20 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
+		<?php 
+		$namespaces = array('error', 'success', 'info', 'default');
+		foreach ($namespaces as $namespace) {
+			$flashMessages = $this->flashmessenger()->render($namespace);
+			if (!empty($flashMessages)) {
+				?>
+					<div id="myAlert" class="alert alert<?php echo $namespace; ?>" data-alert="alert">
+						<a class="close" data-dismiss="alert">x</a>
+						<?php echo $flashMessages; ?>
+					</div>
+				<?php
+			}
+		}
+		?>
         <div class="container">
             <?php echo $this->content; ?>
             <hr>
