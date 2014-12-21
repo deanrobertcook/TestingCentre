@@ -17,7 +17,7 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
         $config = $this->getServiceLocator()->get('config');
-        
+
         return array(
             "applicationName" => $config['application']['name'],
             "version" => $config['application']['version'],

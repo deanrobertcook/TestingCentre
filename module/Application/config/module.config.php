@@ -99,7 +99,7 @@ return array(
             ),
         ),
     ),
-    
+
     'application' => array(
         'name' => 'Testing Centre',
         'version' => '0.0.1'
